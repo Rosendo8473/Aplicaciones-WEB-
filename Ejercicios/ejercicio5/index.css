@@ -1,0 +1,75 @@
+/* Estilos globales del documento */
+body {
+    font-family: "Times New Roman", Times, serif;
+    background-color: #ffffff;
+    margin: 20px;
+}
+
+/* Encabezados h1 */
+h1 {
+    color: #333333;
+    font-size: 20px;
+}
+
+/* Encabezados h2 */
+h2 {
+    color: #666666;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+/* Párrafos, elementos de lista y enlaces */
+p, li, a {
+    color: #000000;
+    font-size: 16px;
+}
+
+/* Configuración específica del enlace */
+a {
+    color: blue;
+    text-decoration: underline;
+}
+
+/* Título de la tabla (caption) */
+table caption {
+    color: #000000;
+    font-size: 14px;
+    font-style: italic;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+/* Estructura general de la tabla */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 400px; /* Ajuste para que no ocupe toda la pantalla */
+    margin-bottom: 20px;
+}
+
+/* Borde de la tabla y sus celdas, junto al relleno (padding) de 10px */
+table, th, td {
+    border: 1px solid #000000;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    font-size: 16px;
+}
+
+/* Celdas de la cabecera (thead) */
+thead th {
+    background-color: #7f7f7f; /* Color gris de fondo de la imagen */
+    color: white;
+}
+
+/* Datos del cuerpo (tbody) y pie de tabla (tfoot) */
+tbody td, tfoot td {
+    color: #000000;
+}
+
+/* El pie de tabla suele tener un fondo gris claro en los diseños */
+tfoot td {
+    background-color: #d9d9d9;
+}
