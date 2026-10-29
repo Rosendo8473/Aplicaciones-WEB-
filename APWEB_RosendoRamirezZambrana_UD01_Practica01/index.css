@@ -1,21 +1,22 @@
+/* El selector universal aplica border-box a TODOS los elementos.
+   Así, el padding y los bordes quedan incluidos en su ancho declarado. */
 * {
     box-sizing: border-box;
 }
-
 /* ----------------------------------------------------------
    1. ESTRUCTURA GENERAL
    ---------------------------------------------------------- */
 body {
     margin: 0;
-    padding: 0;
     min-height: 100vh;   
     min-height: 100dvh;  
     font-family: Arial, sans-serif;
     color: #333;
-    background-color: #F0F0F0;
+    background-color:beige;
+
+    
     display: flex;
     flex-direction: column;
-    
 }
 
 /* ----------------------------------------------------------
@@ -29,6 +30,7 @@ header {
     align-items: center;
     font-family: Arial, sans-serif; 
     padding: 1rem;
+    
 }
 .Nombre-receta.naranga{
     color: #F5A623;
@@ -40,30 +42,96 @@ header {
     min-height: 1dvh;
 }
 header h1 {
-    margin: 0;  
+    margin:0;  
 }
-
-
 /* ----------------------------------------------------------
    3. CONTENIDO PRINCIPAL
    ---------------------------------------------------------- */
-   main {
-    background-color: beige;
+main {
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 650px;
+    
+    margin: 0 auto;
+    flex: 1;
     padding: 2rem;
+    border-radius: 10px;
 }
-   /* ----------------------------------------------------------
-   4. IMAGEN DE LA BANDA
+
+/* ----------------------------------------------------------
+   4. IMAGEN DE LA patatas
    ---------------------------------------------------------- */
-   /* ----------------------------------------------------------
-   5. LISTA DE INTEGRANTES
+.imagen-receta {
+    /* img es un elemento en línea de forma predeterminada;
+       por eso se puede centrar desde su contenedor con text-align. */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.imagen-receta img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* ----------------------------------------------------------
+   5. Receta
    ---------------------------------------------------------- */
-   /* ----------------------------------------------------------
-   6. TABLA DE DISCOS
+
+
+/* ----------------------------------------------------------
+   6. Lista de características de la receta 
    ---------------------------------------------------------- */
-   
-   /* ----------------------------------------------------------
-   7. ENLACE A LA WEB OFICIAL
+.Ingredientes.table{
+  border-collapse: collapse; 
+    margin: 0 auto 20px;
+
+}
+table caption {
+    color: #000000;
+    font-size: 14px;
+    font-style: italic;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+/* Estructura general de la tabla */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 400px; /* Ajuste para que no ocupe toda la pantalla */
+    margin-bottom: 20px;
+}
+
+/* Borde de la tabla y sus celdas, junto al relleno (padding) de 10px */
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    font-size: 16px;
+}
+
+/* ----------------------------------------------------------
+   7. Ingredientes: 
    ---------------------------------------------------------- */
-   /* ----------------------------------------------------------
+.Ingredinetes {
+    padding: 15rem
+}
+.Ingredientes th {
+    background-color: #F5A623; /* Color gris de fondo de la imagen */
+    color: white;
+    text-align: center;
+}
+
+.Ingredientes td {
+    text-align: left;
+    white-space: nowrap;
+}
+/* ----------------------------------------------------------
    8. PIE DE PAGINA
    ---------------------------------------------------------- */
+footer {
+    margin-top: 15px;
+    color: #fcfdfd;
+    text-align: center;
+    font-size: 14px;
+}
