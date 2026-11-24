@@ -4,7 +4,6 @@ box-sizing: border-box;
 }
 /*1. Estructura global y sticky footer */
 body {
-display: flex;
 font-family: Arial, sans-serif;
 background-color: #f4f4f4;
 display: flex;
@@ -20,12 +19,12 @@ padding: 0 2rem 2rem 2rem;
 }
 /*2.cabecera y menu de navegacion*/
 
-header{
-display: flex;
+header {
+
 text-align:center;
 background-color: #4caf50;
 color: white;
-align-items: center;
+padding: 10px 0;
 }
 .cabecera-imagen{
 display: flex;
@@ -34,11 +33,77 @@ align-items: center;
 
 }
 .cabecera-imagen img{
-width: 100%;
-height: 100%;
+width: 100px;
+height: 100px;
 margin-right: 15px;
 
 }
+nav ul{
+list-style: none;
+display:flex;
+justify-content:center;
+gap:30px;
+padding:0;
+}
+nav a{
+color:white;
+text-decoration:none;
+}
+.contenedor-principal h1{
+text-align:center;
+}
+
+.contenedor-tarjetas-productos{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap: 20px;
+padding: 20px;
+}
+
+.tarjeta {
+border: 2px solid #ccc;
+border-radius: 10px;
+padding: 10px;
+max-width: 300px;
+text-align: center;
+background-color: #f9f9f9;
+box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+transition: 0.3s;
+}
+
+.tarjeta:hover{
+transform: scale(1.05);
+box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.tarjeta img{
+max-width:75%;
+border-radius:10px;
+}
+
+.tarjeta h2{
+color:#333;
+}
+
+.descripcionproducto{
+color:#777;
+}
+
+.precio{
+font-size:1.25rem;
+color:#e74c3c;
+}
+
+/*3. Pie de pagina*/
+footer{
+background-color: #4caf50;
+color:white;
+text-align:center;
+font-size:0.9rem;
+}
+
+
 
 
 
